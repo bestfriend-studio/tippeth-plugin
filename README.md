@@ -1,2 +1,1 @@
-# Landstream-styleguide
 # tippeth-plugin
