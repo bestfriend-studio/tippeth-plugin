@@ -1,6 +1,11 @@
+import WalletConnect from '@walletconnect/browser';
+import WalletConnectQRCodeModal from '@walletconnect/qrcode-modal';
+
 // Update the relevant fields with the new data.
 const setDOMInfo = info => {
-  document.getElementById('address').textContent = info.address;
+  info.address
+    ? (document.getElementById('address').textContent = info.address)
+    : (document.getElementById('address').textContent = 'no address set');
 };
 
 // Once the DOM is ready...
@@ -22,11 +27,4 @@ window.addEventListener('DOMContentLoaded', () => {
       );
     }
   );
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  var bg = chrome.extension.getBackgroundPage();
-  var address = bg.address;
-  alert(address);
-  alert('works');
 });
