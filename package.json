@@ -17,7 +17,7 @@
     "@walletconnect/browser": "^1.0.0-beta.47",
     "@walletconnect/qrcode-modal": "^1.0.0-beta.47",
     "@walletconnect/web3-subprovider": "^1.0.0-beta.47",
-    "jquery": "3.1.1",
+    "jquery": "3.5.0",
     "lodash": "4.17.4"
   },
   "devDependencies": {
